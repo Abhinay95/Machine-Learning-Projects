@@ -1,0 +1,6 @@
+2020-06-26/15:47:28		Table created successfully!!
+2020-06-26/15:49:04		Error while creating table: table GOOD_RAW_DATA already exists 
+2020-06-26/15:55:07		Table created successfully!!
+2020-06-26/16:06:38		Table created successfully!!
+2020-06-26/16:14:24		Table created successfully!!
+2020-06-26/16:34:35		Table created successfully!!

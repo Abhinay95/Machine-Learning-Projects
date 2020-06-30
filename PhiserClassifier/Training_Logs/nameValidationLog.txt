@@ -1,0 +1,10 @@
+2020-06-26/15:37:45		Error occured while validating FileName [Errno 2] No such file or directory: 'Training_Raw_files_validated/Bad_Raw'
+2020-06-26/15:42:18		Error occured while validating FileName [Errno 2] No such file or directory: 'Training_Raw_files_validated/Bad_Raw'
+2020-06-26/15:43:28		Error occured while validating FileName log() takes 3 positional arguments but 4 were given
+2020-06-26/15:46:10		Error occured while validating FileName log() takes 3 positional arguments but 4 were given
+2020-06-26/15:47:27		InValid File name!! File moved to BadRaw Folder :: phising_08012020_120000.csv
+2020-06-26/15:49:03		Valid File name!! File moved to GoodRaw Folder :: phising_08012020_120000.csv
+2020-06-26/15:55:06		Valid File name!! File moved to GoodRaw Folder :: phising_08012020_120000.csv
+2020-06-26/16:06:36		Valid File name!! File moved to GoodRaw Folder :: phising_08012020_120000.csv
+2020-06-26/16:14:20		Valid File name!! File moved to GoodRaw Folder :: phising_08012020_120000.csv
+2020-06-26/16:34:31		Valid File name!! File moved to GoodRaw Folder :: phising_08012020_120000.csv
