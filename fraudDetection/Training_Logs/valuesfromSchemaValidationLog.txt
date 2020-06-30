@@ -1,0 +1,2 @@
+2020-06-16/19:42:51		LengthOfDateStampInFile:: 9	LengthOfTimeStampInFile:: 6	 NumberofColumns:: 39
+

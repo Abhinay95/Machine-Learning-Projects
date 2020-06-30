@@ -1,0 +1,2 @@
+2020-06-16/20:06:36		 fraudDetection_021119920_010222.csv: File Transformed successfully!!
+2020-06-16/20:13:11		 fraudDetection_021119920_010222.csv: File Transformed successfully!!
