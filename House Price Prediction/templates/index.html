@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+<!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">-->
+<!--    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">-->
+</head>
+<body>
+        <div class="container">
+            <h2 class="container-heading"><span class="heading_font">House Price Predictor</span></h2>
+            <div class="description">
+                <p>A Machine Learning Web App, Built with Flask</p>
+            </div>
+        </div>
+        <div class="ml-container">
+            <form action="{{ url_for('predict')}}" method="POST">
+                <h3>No. of Bedrooms</h3>
+                <input class="form-input" type="text" name="bedrooms" placeholder="No. of bedrooms eg. 3"><br>
+                <h3>No. of Bathrooms</h3>
+                <input class="form-input" type="text" name="bathrooms" placeholder="No. of bathrooms eg. 2"><br>
+                <h3>Living Room Area</h3>
+                <input class="form-input" type="text" name="livingRoomArea" placeholder="Living room area eg. 650 sq.ft"><br>
+                <h3>Area of lot</h3>
+                <input class="form-input" type="text" name="areaOfLot" placeholder="Area of lot eg. 1000 sq.ft"><br>
+                <h3>No. of Floors</h3>
+                <input class="form-input" type="text" name="floors" placeholder="No. of floors eg. 2"><br>
+                <h3>Water View</h3>
+                <select name="waterfront" id="water" required="required">
+                    <option value="Select">--------------Select--------------</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <h3>View</h3>
+                <select name="view" id="view" required="required">
+                    <option value="Select">--------------Select--------------</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <h3>Ratings</h3>
+                <select name="condition" id="rate" required="required">
+                    <option value="Select">--------------Select--------------</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                 <h3>Grade</h3>
+                <select name="grade" id="grade" required="required">
+                    <option value="Select">--------------Select--------------</option>
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                </select>
+                <h3>Sq. ft Above</h3>
+                <input class="form-input" type="text" name="sqftAbove" placeholder="Sqft above eg. 700 sq.ft"><br>
+                <h3>Year</h3>
+                <input class="form-input" type="text" name="year" placeholder="Year eg. 2000"><br>
+                <h3>Zip Code</h3>
+                <input class="form-input" type="text" name="zipCode" placeholder="Zip Code eg. 98028"><br>
+                <h3>Latitude</h3>
+                <input class="form-input" type="text" name="lat" placeholder="lat eg. 0.2"><br>
+                <h3>Longitude</h3>
+                <input class="form-input" type="text" name="long" placeholder="long eg. 0.2"><br>
+                <h3>Living Room Sq. ft</h3>
+                <input class="form-input" type="text" name="livingRootSqFoot" placeholder="living root sq foot eg. 800 sq.ft"><br>
+                <h3>Lot Sq. ft</h3>
+                <input class="form-input" type="text" name="lotSquareFoot" placeholder="Lot Square Foot eg. 900 sq.ft"><br><br>
+                <button id="sub" type="submit">Calculate the Price</button>
+
+
+            </form>
+                <h3>{{prediction_text}}</h3>
+        </div>
+        <div class='footer'>
+           <div class="contact">
+               <a href="https://github.com/Abhinay95/Machine-Learning-Projects">Github</a>
+<!--               <a target="_blank" href="https://www.linkedin.com/in/anujkvyas"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>-->
+           </div>
+           <p class='footer-description'>Made with ❤️ by Abhinay Verma.</p>
+       </div>
+
+        <style>
+html{
+	height: 100%;
+	margin: 0;
+}
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Website Title */
+.container{
+    padding: 30px;
+	position: relative;
+	background: linear-gradient(45deg, #443B96, #F60B68, #F4483A);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+@keyframes change-gradient {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: #ffffff;
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+	font-weight: normal;
+}
+
+.description p{
+	color: #ffffff;
+    font-style: italic;
+    font-size: 14px;
+    margin: -5px 0 0;
+}
+/* Text Area */
+.ml-container{
+    margin: 30px 0;
+	flex: 1 0 auto;
+}
+
+.form-input {
+	text-align: center;
+	width: 200px;
+	height: 25px;
+	margin-bottom: 5px;
+	border-radius: 14px;
+}
+#water{
+    font-size: 14px;
+    width: 200px;
+    height: 25px;
+    top: 23px;
+    border-radius: 14px;
+}
+#view{
+    font-size: 14px;
+    width: 200px;
+    height: 25px;
+    top: 23px;
+    border-radius: 14px;
+}
+#rate{
+    font-size: 14px;
+    width: 200px;
+    height: 25px;
+    top: 23px;
+    border-radius: 14px;
+}
+#grade{
+    font-size: 14px;
+    width: 200px;
+    height: 25px;
+    top: 23px;
+    border-radius: 14px;
+}
+#sub{
+    font-size: 14px;
+    width: 200px;
+    height: 25px;
+    top: 23px;
+    border-radius: 14px;
+}
+#sub:hover {
+            background-color: darkcyan;
+        }
+
+.footer{
+	flex-shrink: 0;
+	position: relative;
+	padding: 20px;
+	background: linear-gradient(45deg, #443B96, #F60B68, #F4483A);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+
+.footer-description{
+	color: #ffffff;
+	margin: 0;
+	font-size: 12px;
+}
+.contact{
+	color: #ffffff;
+	padding: 7px;
+}
+
+.contact-icon:hover{
+	color: #8c8c8c;
+}
+
+        </style>
+</body>
+</html>
