@@ -1,5 +1,5 @@
 # Machine Learning Projects
-![Dataset](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![NLTK](https://img.shields.io/badge/Library-sklearn-orange.svg)
+![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![NLTK](https://img.shields.io/badge/Library-sklearn-orange.svg)
 
 ### Description about repository:
 This repository consists of all my Machine Learning Project. Datasets are provided in each of the folders above, and also the solution to the problem statements have been provided. 
