@@ -1,0 +1,4 @@
+2020-09-13/21:03:17		Error while creating table: 'dict' object has no attribute 'key' 
+2020-09-13/21:15:50		Table created successfully!!
+2020-09-13/21:19:30		Table created successfully!!
+2020-09-13/21:56:50		Table created successfully!!

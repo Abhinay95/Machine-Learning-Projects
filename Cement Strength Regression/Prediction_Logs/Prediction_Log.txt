@@ -1,0 +1,65 @@
+2020-09-13/21:03:16		Start of Validation on files for prediction!!
+2020-09-13/21:03:16		Raw Data validation completed!!
+2020-09-13/21:03:16		Creating Prediction_Database and tables on the basis of given schema!!!
+2020-09-13/21:07:29		Start of Validation on files for prediction!!
+2020-09-13/21:15:49		Start of Validation on files for prediction!!
+2020-09-13/21:15:50		Raw Data validation completed!!
+2020-09-13/21:15:50		Creating Prediction_Database and tables on the basis of given schema!!!
+2020-09-13/21:15:50		Table creation completed!!
+2020-09-13/21:15:50		Insertion of data into table started!!
+2020-09-13/21:15:51		Insertion of data into table completed!!
+2020-09-13/21:15:51		Deleting Good Data folder!!
+2020-09-13/21:15:51		Good Data folder deleted!!
+2020-09-13/21:15:51		Moving bad files to Archive and deleting Bad_Data folder!!!
+2020-09-13/21:15:51		Bad files moved to archive!! Bad folder Deleted!!
+2020-09-13/21:15:51		Validation Operation completed!!
+2020-09-13/21:15:51		Extracting csv file from table
+2020-09-13/21:15:51		File exported Successfully!!
+2020-09-13/21:15:51		Error occured while running the prediction!! Error:: 'prediction' object has no attribute 'file_name'
+2020-09-13/21:19:30		Start of Validation on files for prediction!!
+2020-09-13/21:19:30		Raw Data validation completed!!
+2020-09-13/21:19:30		Creating Prediction_Database and tables on the basis of given schema!!!
+2020-09-13/21:19:30		Table creation completed!!
+2020-09-13/21:19:30		Insertion of data into table started!!
+2020-09-13/21:19:31		Insertion of data into table completed!!
+2020-09-13/21:19:31		Deleting Good Data folder!!
+2020-09-13/21:19:31		Good Data folder deleted!!
+2020-09-13/21:19:31		Moving bad files to Archive and deleting Bad_Data folder!!!
+2020-09-13/21:19:31		Bad files moved to archive!! Bad folder Deleted!!
+2020-09-13/21:19:31		Validation Operation completed!!
+2020-09-13/21:19:31		Extracting csv file from table
+2020-09-13/21:19:31		File exported Successfully!!
+2020-09-13/21:19:31		Start of Prediction!!
+2020-09-13/21:19:31		Entered the get_data method of the Data_Getter class
+2020-09-13/21:19:31		Data Load Successful.Exited the get_data method of the Data_Getter class
+2020-09-13/21:19:31		Entered the is_null_present method of the Preprocessor class
+2020-09-13/21:19:31		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2020-09-13/21:19:32		Entered the load_model method of the File_Operation class
+2020-09-13/21:19:32		Exception occured in load_model method of the Model_Finder class. Exception message:  [Errno 2] No such file or directory: 'models/KMeans/KMeans.sav'
+2020-09-13/21:19:32		Model File KMeans could not be saved. Exited the load_model method of the Model_Finder class
+2020-09-13/21:19:32		Error occured while running the prediction!! Error:: 
+2020-09-13/21:56:50		Start of Validation on files for prediction!!
+2020-09-13/21:56:50		Raw Data validation completed!!
+2020-09-13/21:56:50		Creating Prediction_Database and tables on the basis of given schema!!!
+2020-09-13/21:56:50		Table creation completed!!
+2020-09-13/21:56:50		Insertion of data into table started!!
+2020-09-13/21:56:51		Insertion of data into table completed!!
+2020-09-13/21:56:51		Deleting Good Data folder!!
+2020-09-13/21:56:51		Good Data folder deleted!!
+2020-09-13/21:56:51		Moving bad files to Archive and deleting Bad_Data folder!!!
+2020-09-13/21:56:51		Bad files moved to archive!! Bad folder Deleted!!
+2020-09-13/21:56:51		Validation Operation completed!!
+2020-09-13/21:56:51		Extracting csv file from table
+2020-09-13/21:56:51		File exported Successfully!!
+2020-09-13/21:56:51		Start of Prediction!!
+2020-09-13/21:56:51		Entered the get_data method of the Data_Getter class
+2020-09-13/21:56:51		Data Load Successful.Exited the get_data method of the Data_Getter class
+2020-09-13/21:56:51		Entered the is_null_present method of the Preprocessor class
+2020-09-13/21:56:51		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2020-09-13/21:56:51		Entered the load_model method of the File_Operation class
+2020-09-13/21:56:51		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2020-09-13/21:56:51		Entered the find_correct_model_file method of the File_Operation class
+2020-09-13/21:56:51		Exited the find_correct_model_file method of the Model_Finder class.
+2020-09-13/21:56:51		Entered the load_model method of the File_Operation class
+2020-09-13/21:56:51		Model File RandomForestRegressor2 loaded. Exited the load_model method of the Model_Finder class
+2020-09-13/21:56:52		End of Prediction
